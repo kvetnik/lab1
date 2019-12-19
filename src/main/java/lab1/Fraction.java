@@ -3,6 +3,7 @@ package lab1;
 public class Fraction {
     private int n,d;
     public Fraction(){}
+    //лаба1
     /** 
      * Create a new Fraction with specified numeration and denomimator
      * @param n
@@ -42,15 +43,15 @@ public class Fraction {
         Fraction c = reduce(new Fraction(rezN, rezD));
         return c;
     }
-
-    public static Fraction multiply(Fraction a, Fraction b){
+    
+   public static Fraction multiply(Fraction a, Fraction b){
        int rezN = a.n * b.n;
        int rezD = a.d * b.d;
        Fraction c = reduce(new Fraction(rezN,rezD));
        return c;
    }
 
-   public static Fraction division(Fraction a, Fraction b){
+    public static Fraction division(Fraction a, Fraction b){
        int rezN = a.n * b.d;
        int rezD = a.d * b.n;
        Fraction c = reduce(new Fraction(rezN,rezD));

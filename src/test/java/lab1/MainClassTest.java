@@ -20,7 +20,7 @@ public class MainClassTest
         Fraction b = new Fraction(1,3);
         Fraction rez = Fraction.sum(a, b);
         assertEquals(new Fraction(5,6), rez);
-        //Fraction rez2 = Fraction.multiply(a, b);
+        Fraction rez2 = Fraction.multiply(a, b);
     }
     @Test
     public void check(){
