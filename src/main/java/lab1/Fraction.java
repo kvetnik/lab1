@@ -86,4 +86,15 @@ public class Fraction {
             return false;
         }
     }
+
+    public boolean moreThan(Fraction fraction){
+        int y = this.d * fraction.n;
+        int x = this.n * fraction.d;
+        if (x>y){
+            return true;
+        }
+        else{
+            return false;
+        }
+
 }
