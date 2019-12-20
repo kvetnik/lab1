@@ -69,4 +69,21 @@ public class Fraction {
        return str;
    }
 
+   @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+          return true;
+        }
+        if (obj == null || obj.getClass() != this.getClass()) {
+            return false;
+        }
+   
+        Fraction temp = (Fraction) obj;
+        if(this.n ==  temp.n && this.d == temp.d){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
